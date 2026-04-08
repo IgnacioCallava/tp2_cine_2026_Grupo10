@@ -1,0 +1,16 @@
+.seccion-detalle {
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid;
+    box-shadow: 5px 0px 5px 0px black;
+}
+.poster {
+    width: auto;
+    height: 300px;
+    box-shadow: 5px 0px 5px 0px black;
+}
+
+@media (max-width: 600px) {
+
+}
