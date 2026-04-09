@@ -1,0 +1,124 @@
+
+
+
+.body{
+    background-color: #fdfdfd;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 70px 50px;
+
+    justify-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column; /* Alinea los hijos uno debajo del otro */
+    justify-content: space-between; /* Empuja el contenido para que el botón siempre esté al fondo */
+    
+    max-width: 250px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    height: 100%; /* Importante para que todas midan lo mismo en la fila */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto + Sombra */
+.card:hover {
+    transform: scale(1.05); /* Agranda la card un 5% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Crea una sombra oscura y suave abajo */
+    border-color: transparent; /* Opcional: quita el borde si te molesta al resaltar */
+}
+
+.card img {
+    width: 100%; /* Fundamental para que la imagen no se salga de la card */
+    height: auto;
+}
+
+.titulo{
+    text-align: center;   
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 40px;    
+    margin-bottom: 20px; 
+    color: #1a1a1a;
+}
+.card-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.ver-mas, .comprar-entradas {
+    text-decoration: none; /* Quita el subrayado azul feo */
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    
+}
+.ver-mas{
+    color: #555;
+    border: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.comprar-entradas{
+    background-color: #f0f0f0;
+    color: #000;
+    border-color: #888;
+}
+
+.Nombre-Genero{
+    text-align: center;
+    width: 100%;
+}
+
+/* Para tablets */
+@media (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* Pasa a 2 columnas */
+        justify-items: center;
+        gap: 60px;
+    }
+
+    .card{
+        max-width: 200px;
+        width: 100%;
+    }
+}
+
+/* Para celulares */
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr; /* 1 sola columna */
+        justify-items: center;
+        gap: 60px;
+    }
+
+    .card{
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .card-link {
+        flex-direction: column; /* Uno arriba del otro */
+    }
+    
+    .ver-mas, .comprar-entradas {
+        width: 100%; /* Ancho completo */
+    }
+}
