@@ -4,3 +4,9 @@ img {
   width: 100px;
   height: 100px;
 }
+
+.poster {
+    width: auto;
+    height: 300px;
+    box-shadow: 5px 0px 5px 0px black;
+}
