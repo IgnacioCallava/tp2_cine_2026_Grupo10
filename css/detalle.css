@@ -17,6 +17,27 @@ body {
     text-align: center;
     border: 2px solid;
     box-shadow: 4px 0px 4px 0px black;
+    box-sizing: border-box;
+}
+
+.fila-superior {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.div-poster {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.poster {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
 }
 
 h3 {
@@ -66,7 +87,7 @@ h3 {
 
 .boton-comprar-entradas{
     display: flex;
-    text-align: end;
+    text-align: center;
     margin: auto;
     margin-right: 10px;
     text-decoration: none;
@@ -82,6 +103,11 @@ h3 {
 
     .main-detalle {
         width: 95%;
+    }
+
+    .fila-superior {
+        display: block;
+        align-items: center;
     }
     .poster {
         width: 100%;
