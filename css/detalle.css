@@ -48,12 +48,24 @@ h3 {
     margin: 12px;
 }
 
+.parte-inferior {
+    display: flex;
+}
+
 .div-puntuacion {
     font-size: 24px;
     padding: 4px;
     padding-right: 0;
     margin-right: 0;
     text-align: start;
+}
+
+.boton-comprar-entradas{
+    display: flex;
+    text-align: end;
+    margin: auto;
+    margin-right: 10px;
+    text-decoration: none;
 }
 
 @media (max-width: 600px) {
@@ -110,8 +122,14 @@ h3 {
         margin: 0;
     }
 
+    .parte-inferior {
+        display: block;
+    }
+
     .boton-comprar-entradas {
-        width: 90%;
+        width: 50%;
+        display: block;
+        margin: auto;
         text-align: center;
         margin-top: 10px;
     }
