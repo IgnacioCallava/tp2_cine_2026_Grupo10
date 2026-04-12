@@ -105,7 +105,7 @@ form {
     background-color: var(--evermore-mist);
 }
 
-/* Bloque cine más simple */
+/* Bloque cine espaciado */
 .bloque.cine div {
     margin-bottom: 15px;
 }
