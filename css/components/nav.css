@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-radius: 5px;
+    padding: 8px;
+}
+
