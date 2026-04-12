@@ -39,8 +39,14 @@
 }
 
 .card img {
-    width: 100%; /* Fundamental para que la imagen no se salga de la card */
-    height: auto;
+    width: 100%;
+    /* Definimos una altura fija para todas las imágenes */
+    height: 350px; 
+    /* La magia: recorta la imagen para que llene el espacio sin estirarse */
+    object-fit: cover;
+    /* Centra el recorte (por si la cara del actor queda muy arriba o abajo) */
+    object-position: center;
+    border-radius: 4px; /* Opcional: para que quede más suave arriba */
 }
 
 .titulo{

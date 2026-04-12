@@ -1,17 +1,43 @@
 @import url(components/poster.css);
 @import url(components/button.css);
+@import url(style.css);
 
 .main-detalle {
     width: 70%;
     margin: auto;
 }
 
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .seccion-detalle {
-    margin: 15px;
-    padding: 15px;
+    margin: 16px;
+    padding: 16px;
     text-align: center;
     border: 2px solid;
-    box-shadow: 5px 0px 5px 0px black;
+    box-shadow: 4px 0px 4px 0px black;
+    box-sizing: border-box;
+}
+
+.fila-superior {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.div-poster {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.poster {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
 }
 
 h3 {
@@ -25,8 +51,8 @@ h3 {
     justify-content: center;
     border-bottom: 2px solid;
     border-left: 2px solid;
-    box-shadow: 5px 0px 5px 1px black;
-    margin: 3px 50px 20px 3px;
+    box-shadow: 4px 0px 4px 1px black;
+    margin: 4px 42px 20px 4px;
 }
 
 .div-horarios, .div-director, .div-duracion {
@@ -35,24 +61,36 @@ h3 {
     justify-content: center;
     border-bottom: 2px solid;
     border-left: 2px solid;
-    box-shadow: 5px 0px 5px 2px black;
-    margin: 3px 3px 15px 50px
+    box-shadow: 4px 0px 4px 2px black;
+    margin: 4px 4px 16px 42px
 }
 
 h3 {
-    margin: auto 10px;
+    margin: auto 12px;
 }
 
 .p-horarios {
-    margin: 10px;
+    margin: 12px;
+}
+
+.parte-inferior {
+    display: flex;
 }
 
 .div-puntuacion {
-    font-size: 25px;
-    padding: 5px;
+    font-size: 24px;
+    padding: 4px;
     padding-right: 0;
     margin-right: 0;
     text-align: start;
+}
+
+.boton-comprar-entradas{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-right: 10px;
+    text-decoration: none;
 }
 
 @media (max-width: 600px) {
@@ -65,6 +103,11 @@ h3 {
 
     .main-detalle {
         width: 95%;
+    }
+
+    .fila-superior {
+        display: block;
+        align-items: center;
     }
     .poster {
         width: 100%;
@@ -85,7 +128,7 @@ h3 {
         align-items: flex-start;
         width: 100%;
 
-        margin: 10px 0;
+        margin: 12px 0;
         border: none;
         box-shadow: none;
         border-bottom: 2px solid black;
@@ -109,8 +152,14 @@ h3 {
         margin: 0;
     }
 
+    .parte-inferior {
+        display: block;
+    }
+
     .boton-comprar-entradas {
-        width: 90%;
+        width: 50%;
+        display: block;
+        margin: auto;
         text-align: center;
         margin-top: 10px;
     }
