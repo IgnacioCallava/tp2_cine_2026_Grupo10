@@ -3,11 +3,11 @@
 @import url(components/nav.css);
 @import url(style.css);
 
-
-
-main {
-  flex: 1; 
+body {
+    background-color: var(--evermore-gold-muted);
 }
+
+
 
 .titulo{
   font-size: 2.5rem;
@@ -20,7 +20,7 @@ section:first-of-type {
   align-items: center;
   gap: 30px;
   padding: 20px;
-  background-color: #b7a160;
+  background-color: #60a1b7;
   border-radius: 10px;
   max-width: 800px;
   margin: 20px auto;
