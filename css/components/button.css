@@ -1,4 +1,4 @@
-.boton-comprar-entradas {
+.boton-comprar-entradas, .button-ingresar {
     padding: 10px;
     background-color: white;
     border-left: 3px solid blue;
@@ -6,3 +6,4 @@
     border-top: 1px solid blue;
     border-bottom: 3px solid blue;
 }
+
