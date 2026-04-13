@@ -1,18 +1,4 @@
-:root {
-  /* Colores Principales */
-    --evermore-brown-dark: #3D2B1F;
-    --evermore-brown-warm: #8C5E3C;
-    --evermore-beige: #D9C5B2;
-
-  /* Colores de Acento */
-    --evermore-forest-green: #2D3A27;
-    --evermore-gold-muted: #BFA07E;
-    --evermore-wine: #5E1D1D;
-
-  /* Neutros */
-    --evermore-mist: #E3E1DE;
-}
-
+@import url(style.css);
 /* Fondo general y tipografía */
 body {
     background-color: var(--evermore-gold-muted);
