@@ -1,4 +1,5 @@
 @import url(style.css);
+@import url(components/nav.css);
 /* Fondo general y tipografía */
 body {
     background-color: var(--evermore-gold-muted);

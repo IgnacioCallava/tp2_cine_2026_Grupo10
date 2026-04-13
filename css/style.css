@@ -46,3 +46,25 @@
   /* Neutros */
     --evermore-mist: #E3E1DE;
 }
+
+header{
+  border-bottom: 2px solid black;
+  box-shadow: 0 0 5px 0px black;
+}
+
+.div-header {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  width: 50%;
+  border-radius: 12px;
+  border: 2px solid black;
+}
+
+.img-header {
+  margin: 12px;
+  border-radius: 12px;
+  border: 2px solid black
+}
