@@ -1,0 +1,46 @@
+@import url(style.css);
+@import url(components/nav.css);
+@import url(components/nav.css);
+@import url(components/footer.css);
+@import url(components/button.css);
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--evermore-gold-muted);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.div-acceso {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.button-ingresar {
+    padding: 10px;
+}
+
+
+form p {
+    font-size: 14px;
+    text-align: center;
+}
