@@ -75,13 +75,13 @@ body {
 }
 
 /* ---- NOMBRE Y GÉNERO ---- */
-.Nombre-Genero {
+.nombre-genero {
     text-align: center;
     width: 100%;
     margin-top: 10px;
 }
 
-.Nombre-Genero h4 {
+.nombre-genero h4 {
     font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
     font-size: 1rem;
     margin-bottom: 4px;
