@@ -114,10 +114,6 @@
 
 /* Para celulares */
 @media (max-width: 600px) {
-    .div-header {
-        
-    }
-    
     .card-container {
         grid-template-columns: 1fr; /* 1 sola columna */
         justify-items: center;
