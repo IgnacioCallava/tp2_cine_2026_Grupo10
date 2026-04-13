@@ -1,8 +1,10 @@
-
+@import url(components/nav.css);
+@import url(style.css);
+@import url(components/footer.css);
 
 
 .body{
-    background-color: #fdfdfd;
+    background-color: var(--evermore-gold-muted);
 }
 
 .card-container {
@@ -21,7 +23,7 @@
     display: flex;
     flex-direction: column; /* Alinea los hijos uno debajo del otro */
     justify-content: space-between; /* Empuja el contenido para que el botón siempre esté al fondo */
-    
+    background-color: var(--evermore-beige);
     max-width: 250px;
     width: 100%;
     border: 1px solid #ddd;
@@ -95,6 +97,9 @@
 
 /* Para tablets */
 @media (max-width: 1024px) {
+    .div-header {
+        width: 90%;
+    }
     .card-container {
         grid-template-columns: repeat(2, 1fr); /* Pasa a 2 columnas */
         justify-items: center;
@@ -109,6 +114,10 @@
 
 /* Para celulares */
 @media (max-width: 600px) {
+    .div-header {
+        
+    }
+    
     .card-container {
         grid-template-columns: 1fr; /* 1 sola columna */
         justify-items: center;

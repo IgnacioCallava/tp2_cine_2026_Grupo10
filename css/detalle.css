@@ -100,14 +100,10 @@ h3 {
     text-decoration: none;
 }
 
-footer{
-    color: black;
-    background-color: var(--evermore-mist);
-    border: 2px solid black;
-    border-radius: 8px;
-}
-
 @media (max-width: 600px) {
+    .div-header {
+        width: 90%;
+    }
 
     .seccion-detalle {
         display: flex;
