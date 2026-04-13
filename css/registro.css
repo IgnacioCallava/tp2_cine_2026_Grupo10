@@ -1,0 +1,113 @@
+@import url(style.css);
+/* Fondo general y tipografía */
+body {
+    background-color: var(--evermore-gold-muted);
+    color: var(--evermore-brown-dark);
+    font-family: 'Georgia', serif;
+}
+
+/* Contenedor general del formulario */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* dos columnas */
+    gap: 20px;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+/* Bloques principales */
+.bloque {
+    grid-column: span 2; /* cada bloque ocupa todo el ancho */
+    background-color: var(--evermore-beige);
+    border-left: 5px solid var(--evermore-forest-green);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+.bloque h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--evermore-brown-dark);
+}
+
+/* Bloque de "Crear cuenta nueva" */
+.bloque.cuenta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Crear nueva cuenta quede centrado*/
+.bloque.cuenta h2 {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Nombre y Email en la misma fila */
+/* ya queda así */
+
+/* Fecha de nacimiento quede centrado */
+.bloque.cuenta div:nth-of-type(3) {
+    grid-column: span 2;
+    text-align: center;
+} 
+
+/* contraseña y confirmar contraseña en la misma fila*/
+/* ya queda así */
+
+/* Botón de registrate centrado*/
+.bloque.cuenta button {
+    grid-column: span 2;
+    background-color: var(--evermore-wine);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+/* efecto del botón, mismo color que el fondo*/
+.bloque.cuenta button:hover {
+    background-color: var(--evermore-brown-warm);
+}
+
+.bloque.cuenta div {
+    display: flex;
+    flex-direction: column; /* label arriba, input abajo */
+}
+
+/* Inputs y selects */
+.bloque input,
+.bloque select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--evermore-gold-muted);
+    border-radius: 4px;
+    background-color: var(--evermore-mist);
+}
+
+/* Bloque cine espaciado */
+.bloque.cine div {
+    margin-bottom: 15px;
+}
+.bloque.cine label {
+    font-weight: bold;
+    color: var(--evermore-charcoal);
+    display: block;
+    margin-bottom: 5px;
+}
+.bloque.cine input[type="radio"] {
+    margin-right: 5px;
+}
+
+/*  Ordenar los snacks, con clase snacks*/
+.bloque.cine .snacks {
+    display: grid;
+    grid-template-columns: auto 1fr; /* una columna para el boton y otra para el texto*/
+    gap : 10px 20px; /* espacio entre fila y columna*/ 
+}

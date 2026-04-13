@@ -10,6 +10,8 @@
 }
 
 body {
+    background-color: var(--evermore-gold-muted);
+    color: var(--evermore-brown-dark);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -17,6 +19,7 @@ body {
     margin: 16px;
     padding: 16px;
     text-align: center;
+    background-color: var(--evermore-beige);
     border: 2px solid;
     box-shadow: 4px 0px 4px 0px black;
     box-sizing: border-box;
@@ -55,6 +58,7 @@ h3 {
     border-left: 2px solid;
     box-shadow: 4px 0px 4px 1px black;
     margin: 4px 42px 20px 4px;
+    background-color: white;
 }
 
 .div-horarios, .div-director, .div-duracion {
@@ -64,7 +68,8 @@ h3 {
     border-bottom: 2px solid;
     border-left: 2px solid;
     box-shadow: 4px 0px 4px 2px black;
-    margin: 4px 4px 16px 42px
+    margin: 4px 4px 16px 42px;
+    background-color: white;
 }
 
 h3 {
@@ -93,6 +98,13 @@ h3 {
     margin: auto;
     margin-right: 10px;
     text-decoration: none;
+}
+
+footer{
+    color: black;
+    background-color: var(--evermore-mist);
+    border: 2px solid black;
+    border-radius: 8px;
 }
 
 @media (max-width: 600px) {
@@ -133,7 +145,7 @@ h3 {
         margin: 12px 0;
         border: none;
         box-shadow: none;
-        border-bottom: 2px solid black;
+        border: 2px solid black;
     }
     
     p {
